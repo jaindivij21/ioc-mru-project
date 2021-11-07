@@ -1,4 +1,4 @@
-#* Main python scripts file
+# * Main python scripts file
 
 # REQUIREMENTS
 from flask import Flask
