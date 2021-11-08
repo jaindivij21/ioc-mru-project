@@ -25,4 +25,4 @@ npm i
 > cd ./public/scripts/
 > python main.py
 ```
-8) Once the flask server is runnning on port 5000 i.e. localhost:5000, visit *localhost:3000/mru* to see the tabular representation of the data.
+8) Once the flask server is runnning on port 5000 i.e. localhost:5000, visit **localhost:3000/mru** to see the tabular representation of the data.
