@@ -35,8 +35,7 @@ app.get("/", (req, res) => {
 
 app.post("/", upload.single("file"), (req, res) => {
     console.log(req.file);
-    res.send("Successfully uploaded the file!");
-    // res.redirect("/mru");
+    res.redirect("/mru");
 });
 
 app.get("/mru", (req, res) => {

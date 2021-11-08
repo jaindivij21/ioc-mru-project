@@ -44,6 +44,9 @@ footer {
     padding-bottom: 1%;
     color: white;
 }
+p {
+    color: white;
+}
 
 .file-form {
     padding: 5% 10% 1.5% 10%;
