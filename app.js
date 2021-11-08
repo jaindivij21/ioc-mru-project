@@ -2,10 +2,10 @@
 
 // REQUIREMENTS
 /* #region   */
-
 const express = require("express"); // express modules
 const ejs = require("ejs"); // get ejs
 const request = require("request"); // API get requests
+const multer = require("multer"); // file uploads
 /* #endregion */
 
 // app declare and extras to read from a post request and use static files
@@ -16,9 +16,31 @@ app.use(express.urlencoded({ extended: true })); // body parser
 // PAGES
 /* #region */
 
+// Middleware to upload files
+const fileStorageEngine = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, "./public/assets/");
+    },
+    filename: (req, file, cb) => {
+        cb(null, "main.txt");
+    },
+});
+
+const upload = multer({ storage: fileStorageEngine });
+
 // index page (home page) : get
 app.get("/", (req, res) => {
-    request("http://127.0.0.1:5000/", function (error, response, body) {
+    res.render("upload");
+});
+
+app.post("/", upload.single("file"), (req, res) => {
+    console.log(req.file);
+    res.send("Successfully uploaded the file!");
+    // res.redirect("/mru");
+});
+
+app.get("/mru", (req, res) => {
+    request("http://localhost:5000/", function (error, response, body) {
         if (error) console.log(error);
         else data = JSON.parse(body);
         console.log(data);

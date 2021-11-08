@@ -5,7 +5,6 @@ from flask import Flask
 from bson.json_util import dumps
 from flask_pymongo import PyMongo
 from datetime import datetime
-import os
 from dotenv import load_dotenv
 from pandas import pandas
 
@@ -56,6 +55,7 @@ def index():
     mru = mongo.db.server.find()
     print(mru)
     resp = dumps(mru)
+    print("Data Sent Back Successfully!")
     return resp
 
 

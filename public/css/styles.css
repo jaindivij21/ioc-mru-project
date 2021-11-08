@@ -16,7 +16,11 @@ body {
 }
 
 h1 {
-    margin-bottom: 2rem;
+    margin: 2rem auto 2rem auto;
+    color: white;
+}
+
+h2 {
     color: white;
 }
 
@@ -39,4 +43,18 @@ footer {
     padding-top: 1%;
     padding-bottom: 1%;
     color: white;
+}
+
+.file-form {
+    padding: 5% 10% 1.5% 10%;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.685);
+    border-radius: 3%;
+    margin: 5rem 15rem 5rem 15rem;
+    text-align: center;
+}
+
+input {
+    margin: 4rem auto 4rem auto;
+    font-size: larger;
+    font-weight: 600;
 }
