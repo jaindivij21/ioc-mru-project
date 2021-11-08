@@ -19,10 +19,10 @@ npm i
 ```
 > node app.js
 ```
-6) Visit localhost:3000 to upload the txt file.
-7) Now start the flask server using the following command:
+6) Now start the flask server on port 5000 i.e. localhost:5000 using the following command:
 ```
 > cd ./public/scripts/
 > python main.py
 ```
-8) Once the flask server is runnning on port 5000 i.e. localhost:5000, visit *localhost:3000/mru* to see the tabular representation of the data.
+7) Visit **localhost:3000** to upload the txt file.
+9) You will be redirected to **localhost:3000/mru** to see the tabular representation of the data.
