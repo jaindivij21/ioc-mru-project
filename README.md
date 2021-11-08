@@ -28,7 +28,7 @@ npm i
 9) You will be redirected to **localhost:3000/mru** to see the tabular representation of the data.
 
 ## Project Description
-Given .txt files with readings from various sensors at time intervals of around 10 seconds. This web app allows the user to upload that file on the web application, which thereafter is processed by a flask microservice, which extracts hourly reading from the txt file and compiles it into JSON format under specific headings/tags. This microservice returns the JSON upon request from our NodeJS (Express) web applicatin which in turn displays the data beautifully on the website in form of a table.
+Given .txt files with readings from various sensors at time intervals of around 10 seconds. This web app allows the user to upload that file on the web application, which thereafter is processed by a flask microservice, which extracts hourly reading from the txt file and compiles it into JSON format under specific headings/tags. This microservice returns the JSON upon request from our NodeJS (Express) web application which in turn displays the data beautifully on the website in form of a table.
 
 ### Technologies Used
 1) Javascript/HTML/CSS
