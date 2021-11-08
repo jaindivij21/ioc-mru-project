@@ -53,7 +53,6 @@ def index():
 
     # retrive the data back from the database
     mru = mongo.db.server.find()
-    print(mru)
     resp = dumps(mru)
     print("Data Sent Back Successfully!")
     return resp
