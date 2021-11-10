@@ -30,7 +30,8 @@ npm i
 9) You will be redirected to **localhost:3000/mru** to see the tabular representation of the data.
 
 #### Note: 
-Need to have NodeJS and Python installed on the local machine to run this project.
+1) Need to have NodeJS and Python installed on the local machine to run this project.
+2) Find the result images of the web app in the folder "result_images".
 
 
 ## Project Description
