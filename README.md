@@ -1,5 +1,7 @@
 # Indian Oil Corporation Intern Project
 ## How To Run on local machine:
+
+0) Download to project on the local machine. Extract if its a .rar file. Use an IDE/Code Editor like VSCode to look at the code of the project. Finally use command line to execute the following commands to run the project. 
 1) Install all the npm dependencies (in package.json) using the command:
 ```
 npm i
@@ -26,3 +28,15 @@ npm i
 ```
 7) Visit **localhost:3000** to upload the txt file.
 9) You will be redirected to **localhost:3000/mru** to see the tabular representation of the data.
+
+#### Note: 
+Need to have NodeJS and Python installed on the local machine to run this project.
+
+
+## Project Description
+Given .txt files with readings from various sensors at time intervals of around 10 seconds. This web app allows the user to upload that file on the web application, which thereafter is processed by a flask microservice, which extracts hourly reading from the txt file and compiles it into JSON format under specific headings/tags. This microservice returns the JSON upon request from our NodeJS (Express) web application which in turn displays the data beautifully on the website in form of a table.
+
+### Technologies Used
+1) Javascript/HTML/CSS
+2) NodeJS, Express
+3) Flask, Pandas (Python)
